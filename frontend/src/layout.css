@@ -1,0 +1,219 @@
+.left-column {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-right: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.right-column {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 0;
+}
+
+.map-wrap {
+  min-height: 0;
+  position: relative;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+  background: var(--panel) !important;
+}
+
+/* Leaflet's default popup styling clashes with the dark theme -- override minimally */
+.leaflet-popup-content-wrapper {
+  background: var(--panel-raised);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.leaflet-popup-tip { background: var(--panel-raised); }
+
+.empty-state {
+  padding: 24px 12px;
+  text-align: center;
+  color: var(--text-muted);
+}
+.empty-state-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.empty-state-body { font-size: 12.5px; }
+
+/* --- Buttons --- */
+.btn {
+  border: 1px solid var(--border);
+  background: var(--panel-raised);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 9px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn:hover:not(:disabled) { border-color: var(--text-faint); }
+
+.btn-primary {
+  background: var(--amber);
+  border-color: var(--amber);
+  color: #1A1204;
+  font-weight: 600;
+}
+.btn-primary:hover:not(:disabled) { background: #f0b158; }
+
+.btn-ghost {
+  background: transparent;
+}
+
+/* --- Detail panel --- */
+.detail-panel {
+  border-top: 1px solid var(--border);
+  padding: 16px 20px;
+  background: var(--panel);
+  overflow-y: auto;
+  max-height: 42vh;
+}
+
+.detail-empty {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.detail-id { color: var(--text-muted); font-size: 12px; }
+
+.detail-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.detail-facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 16px;
+  margin: 0 0 14px 0;
+}
+.detail-facts dt {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.detail-facts dd {
+  margin: 0;
+  font-size: 13px;
+}
+
+.detail-reason {
+  background: var(--panel-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  margin-bottom: 14px;
+}
+.detail-reason-label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.detail-reason p { margin: 0; font-size: 13px; color: var(--text); }
+
+.detail-status-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+.detail-status-value { font-family: var(--font-mono); text-transform: uppercase; }
+
+.detail-error {
+  background: rgba(224,92,92,0.1);
+  border: 1px solid var(--red);
+  color: var(--red);
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  font-size: 12.5px;
+  margin-bottom: 10px;
+}
+
+.detail-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 4px 0 0 0;
+}
+
+/* --- Simulator panel --- */
+.simulator-panel {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.simulator-header {
+  font-family: var(--font-display);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.sim-label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.sim-select {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  background: var(--panel-raised);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 7px 8px;
+  font-size: 13px;
+}
+
+.sim-hint {
+  display: block;
+  color: var(--amber);
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.sim-actions {
+  margin-top: 8px;
+}
+
+.sim-result {
+  background: var(--teal-dim);
+  color: var(--teal);
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  font-size: 12px;
+  margin-top: 6px;
+}

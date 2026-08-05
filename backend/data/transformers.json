@@ -1,0 +1,82 @@
+[
+  {
+    "dt_id": "D-0001",
+    "feeder_id": "F-07-01",
+    "lat": 12.950499977494406,
+    "lon": 77.5994598044633,
+    "capacity_kva": 250,
+    "households_served": 300
+  },
+  {
+    "dt_id": "D-0002",
+    "feeder_id": "F-07-01",
+    "lat": 12.971638280104449,
+    "lon": 77.56150248407207,
+    "capacity_kva": 100,
+    "households_served": 120
+  },
+  {
+    "dt_id": "D-0003",
+    "feeder_id": "F-07-01",
+    "lat": 12.969623912970762,
+    "lon": 77.5846752855333,
+    "capacity_kva": 500,
+    "households_served": 600
+  },
+  {
+    "dt_id": "D-0004",
+    "feeder_id": "F-07-01",
+    "lat": 12.968879533689009,
+    "lon": 77.56984332535778,
+    "capacity_kva": 500,
+    "households_served": 600
+  },
+  {
+    "dt_id": "D-0005",
+    "feeder_id": "F-07-02",
+    "lat": 12.9456921837922,
+    "lon": 77.58081730897328,
+    "capacity_kva": 250,
+    "households_served": 300
+  },
+  {
+    "dt_id": "D-0006",
+    "feeder_id": "F-07-02",
+    "lat": 12.955390107268208,
+    "lon": 77.56940322793768,
+    "capacity_kva": 100,
+    "households_served": 120
+  },
+  {
+    "dt_id": "D-0007",
+    "feeder_id": "F-07-01",
+    "lat": 12.96096423019701,
+    "lon": 77.56370073645853,
+    "capacity_kva": 100,
+    "households_served": 120
+  },
+  {
+    "dt_id": "D-0008",
+    "feeder_id": "F-07-02",
+    "lat": 12.947005007562517,
+    "lon": 77.59753272759887,
+    "capacity_kva": 250,
+    "households_served": 300
+  },
+  {
+    "dt_id": "D-0009",
+    "feeder_id": "F-07-01",
+    "lat": 12.972853185929626,
+    "lon": 77.56442922478594,
+    "capacity_kva": 500,
+    "households_served": 600
+  },
+  {
+    "dt_id": "D-0010",
+    "feeder_id": "F-07-01",
+    "lat": 12.97274275492002,
+    "lon": 77.57764890662455,
+    "capacity_kva": 500,
+    "households_served": 600
+  }
+]
